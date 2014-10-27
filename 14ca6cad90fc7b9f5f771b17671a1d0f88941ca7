@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a18252c_b78cbb36",
+        "filename": "camera/CameraWrapper.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-10-27T13:30:21Z",
+      "side": 1,
+      "message": "You can just do:\n\nif (id \u003d\u003d 1) { params.set(android::CameraParameters::KEY_SUPPORTED_SCENE_MODES, supportedSceneModes);\n}\n\nThere\u0027s no need to conditionally assign this.",
+      "revId": "14ca6cad90fc7b9f5f771b17671a1d0f88941ca7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a18252c_1782cf00",
+        "filename": "camera/CameraWrapper.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-10-27T13:30:21Z",
+      "side": 1,
+      "message": "Try for 80 characters per line, it\u0027s annoying with the long names, but still.",
+      "revId": "14ca6cad90fc7b9f5f771b17671a1d0f88941ca7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
