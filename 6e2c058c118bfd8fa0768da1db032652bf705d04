@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a18252c_f702b36e",
+        "filename": "camera/CameraWrapper.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-10-27T14:26:04Z",
+      "side": 1,
+      "message": "Sorry, I see why you had the if (params.get(...)) statement, this is only needed for non-video record mode. My mistake.",
+      "revId": "6e2c058c118bfd8fa0768da1db032652bf705d04",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
