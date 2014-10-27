@@ -51,6 +51,24 @@
       "revId": "14ca6cad90fc7b9f5f771b17671a1d0f88941ca7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a18252c_b7bafbbe",
+        "filename": "camera/CameraWrapper.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-10-27T13:44:07Z",
+      "side": 1,
+      "message": "Yeah, 100 is java, I try to keep C/C++ to 80, although it\u0027s harder in the camera wrappers because of really long parameter names.",
+      "parentUuid": "5a18252c_77aa2372",
+      "revId": "14ca6cad90fc7b9f5f771b17671a1d0f88941ca7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
