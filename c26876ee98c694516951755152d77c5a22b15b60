@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a18252c_573f2725",
+        "filename": "camera/CameraWrapper.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-10-27T14:56:19Z",
+      "side": 1,
+      "message": "What I meant to say is, do if (!videoMode \u0026\u0026 id \u003d\u003d 1)",
+      "revId": "c26876ee98c694516951755152d77c5a22b15b60",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
