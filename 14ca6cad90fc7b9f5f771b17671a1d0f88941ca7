@@ -33,6 +33,24 @@
       "revId": "14ca6cad90fc7b9f5f771b17671a1d0f88941ca7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a18252c_77aa2372",
+        "filename": "camera/CameraWrapper.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2014-10-27T13:40:53Z",
+      "side": 1,
+      "message": "Oh 100 chars is for java only?",
+      "parentUuid": "5a18252c_1782cf00",
+      "revId": "14ca6cad90fc7b9f5f771b17671a1d0f88941ca7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
