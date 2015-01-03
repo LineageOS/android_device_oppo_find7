@@ -52,6 +52,24 @@
       "revId": "1dfd7464dc482f4dcf7d57aed5bb24685ed7951d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_063f20b5",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-01-03T13:23:09Z",
+      "side": 1,
+      "message": "TARGET_RELEASE_CPPFLAGS is cm12, this is cm11",
+      "parentUuid": "7aa08908_a64d6c74",
+      "revId": "1dfd7464dc482f4dcf7d57aed5bb24685ed7951d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
