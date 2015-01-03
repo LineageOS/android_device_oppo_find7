@@ -70,6 +70,24 @@
       "revId": "1dfd7464dc482f4dcf7d57aed5bb24685ed7951d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_c6ed188d",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-01-03T21:15:44Z",
+      "side": 1,
+      "message": "Ah, that was what I was thinking of. Thanks for checking that.",
+      "parentUuid": "7aa08908_063f20b5",
+      "revId": "1dfd7464dc482f4dcf7d57aed5bb24685ed7951d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
