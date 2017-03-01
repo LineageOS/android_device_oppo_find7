@@ -20,8 +20,6 @@ on fs
     mount_all ./fstab.qcom
 
 on init
-    export LD_SHIM_LIBS "/system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_camera.so:/system/lib/libcamera_client.so|libshim_camera_parameters.so"
-
     # Support legacy paths
     symlink /sdcard /storage/sdcard0
 
