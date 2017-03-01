@@ -1,5 +1,4 @@
 # Camera
-lib/hw/camera.msm8974.so:vendor/lib/hw/camera.vendor.msm8974.so
 vendor/lib/libchromaflash.so
 vendor/lib/libllvd_smore.so
 vendor/lib/libmmcamera2_is.so
