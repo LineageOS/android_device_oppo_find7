@@ -1,3 +1,3 @@
 Copyright 2014 - The CyanogenMod Project
 
-Device configuration for Oppo Find7.
+Device configuration for OPPO Find7.
