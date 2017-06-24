@@ -14,11 +14,51 @@
 # limitations under the License.
 #
 
-# Inherit from find7-common
--include device/oppo/find7-common/BoardConfigCommon.mk
+# Inherit from msm8974-common
+-include device/oppo/msm8974-common/BoardConfigCommon.mk
+
+# Include path
+TARGET_SPECIFIC_HEADER_PATH += device/oppo/find7/include
+
+# Kernel
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3
+TARGET_KERNEL_CONFIG := lineageos_find7_defconfig
+TARGET_KERNEL_SOURCE := kernel/oppo/msm8974
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := find7,find7a,FIND7,X9006,X9007
+TARGET_OTA_ASSERT_DEVICE := find7,find7a,find7s,FIND7,X9006,X9007,X9076,X9077
+
+# Audio
+AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
+
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/find7/bluetooth
+
+# Camera
+USE_DEVICE_SPECIFIC_CAMERA := true
+
+# Filesystem
+BOARD_BOOTIMAGE_PARTITION_SIZE     := 16777216
+BOARD_CACHEIMAGE_PARTITION_SIZE    := 536870912
+BOARD_PERSISTIMAGE_PARTITION_SIZE  := 33554432
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216
+BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 1073741824
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 13747929088 # 13747945472 - 16384 for crypto footer
+#BOARD_USERDATAIMAGE_PARTITION_SIZE := 3221225472
+
+# Init
+TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/oppo/find7/init/init_find7.cpp
 
 # Properties
 TARGET_SYSTEM_PROP += device/oppo/find7/system.prop
+
+# Recovery
+TARGET_RECOVERY_FSTAB := device/oppo/find7/rootdir/etc/fstab.recovery
+
+# TWRP
+ifeq ($(WITH_TWRP),true)
+TARGET_RECOVERY_DEVICE_DIRS += device/oppo/find7-common/twrp
+endif
+
+# Inherit from the proprietary version
+include vendor/oppo/find7/BoardConfigVendor.mk
