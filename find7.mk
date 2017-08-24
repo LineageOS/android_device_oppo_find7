@@ -43,6 +43,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 # NFC
 PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.0-impl \
     nfc.msm8974 \
     libnfc \
     libnfc_jni \
