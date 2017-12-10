@@ -29,12 +29,16 @@
 
 #include <stdlib.h>
 
+#include <android-base/logging.h>
+
 #include "vendor_init.h"
 #include "property_service.h"
-#include "log.h"
 #include "util.h"
 
 #include "init_msm8974.h"
+
+using android::init::import_kernel_cmdline;
+using android::init::property_set;
 
 static void set_xxhdpi_properties()
 {
