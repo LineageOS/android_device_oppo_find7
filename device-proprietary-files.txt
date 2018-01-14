@@ -2,6 +2,7 @@
 lib/hw/camera.msm8974.so:vendor/lib/hw/camera.vendor.msm8974.so
 vendor/lib/libchromaflash.so
 vendor/lib/libllvd_smore.so
+vendor/lib/libmmcamera2_is.so
 vendor/lib/libmmcamera2_q3a_special.so
 vendor/lib/libmmcamera_chromaflash_lib.so
 vendor/lib/libmmcamera_imx214.so
