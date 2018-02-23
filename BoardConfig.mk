@@ -52,6 +52,11 @@ TARGET_SYSTEM_PROP += device/oppo/find7/system.prop
 # Recovery
 TARGET_RECOVERY_FSTAB := device/oppo/find7/rootdir/etc/fstab.recovery
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib/hw/camera.vendor.msm8974.so|libshim_camera.so \
+    /system/lib/libcamera_client.so|libshim_camera_parameters.so
+
 # TWRP
 ifeq ($(WITH_TWRP),true)
 TARGET_RECOVERY_DEVICE_DIRS += device/oppo/find7-common/twrp
