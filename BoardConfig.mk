@@ -59,7 +59,7 @@ TARGET_LD_SHIM_LIBS := \
 
 # TWRP
 ifeq ($(WITH_TWRP),true)
-TARGET_RECOVERY_DEVICE_DIRS += device/oppo/find7-common/twrp
+TARGET_RECOVERY_DEVICE_DIRS += device/oppo/find7/twrp
 endif
 
 # Inherit from the proprietary version
