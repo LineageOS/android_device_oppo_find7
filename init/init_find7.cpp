@@ -103,11 +103,11 @@ static void import_kernel_nv(const std::string& key,
         if (value == "20" || value == "21" ||
                 value == "22" || value == "23") {
             property_set("ro.oppo.device", "find7s");
-            property_set("ro.power_profile.override", "find7s");
+            property_set("ro.power_profile.override", "power_profile_find7s");
             set_xxxhdpi_properties();
         } else {
             property_set("ro.oppo.device", "find7");
-            property_set("ro.power_profile.override", "find7");
+            property_set("ro.power_profile.override", "power_profile_find7");
             set_xxhdpi_properties();
         }
     }
