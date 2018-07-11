@@ -41,34 +41,6 @@
 using android::init::import_kernel_cmdline;
 using android::init::property_set;
 
-static void set_xxhdpi_properties()
-{
-    // dalvik
-    property_set("dalvik.vm.heapstartsize", "16m");
-    property_set("dalvik.vm.heapgrowthlimit", "192m");
-    property_set("dalvik.vm.heapsize", "512m");
-    property_set("dalvik.vm.heaptargetutilization", "0.75");
-    property_set("dalvik.vm.heapminfree", "2m");
-    property_set("dalvik.vm.heapmaxfree", "8m");
-
-    // density
-    property_set("ro.sf.lcd_density", "480");
-}
-
-static void set_xxxhdpi_properties()
-{
-    // dalvik
-    property_set("dalvik.vm.heapstartsize", "8m");
-    property_set("dalvik.vm.heapgrowthlimit", "288m");
-    property_set("dalvik.vm.heapsize", "768m");
-    property_set("dalvik.vm.heaptargetutilization", "0.75");
-    property_set("dalvik.vm.heapminfree", "2m");
-    property_set("dalvik.vm.heapmaxfree", "8m");
-
-    // density
-    property_set("ro.sf.lcd_density", "640");
-}
-
 static void import_kernel_nv(const std::string& key,
         const std::string& value, bool for_emulator __attribute__((unused)))
 {
@@ -79,11 +51,11 @@ static void import_kernel_nv(const std::string& key,
                 value == "22" || value == "23") {
             property_set("ro.oppo.device", "find7s");
             property_set("ro.power_profile.override", "power_profile_find7s");
-            set_xxxhdpi_properties();
+            property_set("ro.sf.lcd_density", "640");
         } else {
             property_set("ro.oppo.device", "find7");
             property_set("ro.power_profile.override", "power_profile_find7");
-            set_xxhdpi_properties();
+            property_set("ro.sf.lcd_density", "480");
         }
     }
 
