@@ -56,6 +56,10 @@ PRODUCT_COPY_FILES += \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/vendor/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/vendor/etc/permissions/android.hardware.nfc.xml
 
+# Recorder
+PRODUCT_PACKAGES += \
+    Recorder
+
 # Call the proprietary setup
 $(call inherit-product, vendor/oppo/find7/find7-vendor.mk)
 
