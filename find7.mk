@@ -65,6 +65,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Recorder
 
+# Shipping API
+$(call inherit-product, vendor/lineage/build/target/product/product_launched_with_j_mr2.mk)
+
 # Call the proprietary setup
 $(call inherit-product, vendor/oppo/find7/find7-vendor.mk)
 
