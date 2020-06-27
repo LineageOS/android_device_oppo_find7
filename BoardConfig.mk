@@ -48,7 +48,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 13747929088 # 13747945472 - 16384 for cryp
 TARGET_FS_CONFIG_GEN := device/oppo/find7/config.fs
 
 # Init
-TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/oppo/find7/init/init_find7.cpp
+SOONG_CONFIG_OPPO_MSM8974_INIT_DEVICE_LIB := //device/oppo/find7:libinit_find7
 
 # Properties
 TARGET_SYSTEM_PROP += device/oppo/find7/system.prop
