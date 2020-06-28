@@ -17,6 +17,8 @@
 # Inherit from msm8974-common
 -include device/oppo/msm8974-common/BoardConfigCommon.mk
 
+DEVICE_PATH := device/oppo/find7
+
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3
 TARGET_KERNEL_CONFIG := lineageos_find7_defconfig
@@ -30,7 +32,7 @@ AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/find7/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Display
 TARGET_MSM8974_1440P_EGL_WORKAROUND := true
@@ -48,17 +50,17 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 13747929088 # 13747945472 - 16384 for cryp
 TARGET_FS_CONFIG_GEN := device/oppo/find7/config.fs
 
 # Init
-SOONG_CONFIG_OPPO_MSM8974_INIT_DEVICE_LIB := //device/oppo/find7:libinit_find7
+SOONG_CONFIG_OPPO_MSM8974_INIT_DEVICE_LIB := //$(DEVICE_PATH):libinit_find7
 
 # Properties
-TARGET_SYSTEM_PROP += device/oppo/find7/system.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/oppo/find7/rootdir/etc/fstab.recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.recovery
 
 # TWRP
 ifeq ($(WITH_TWRP),true)
-TARGET_RECOVERY_DEVICE_DIRS += device/oppo/find7/twrp
+TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)/twrp
 endif
 
 # Inherit from the proprietary version
