@@ -65,10 +65,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Recorder
 
-# Recorder
-PRODUCT_PACKAGES += \
-    Recorder
-
 # Shipping API
 $(call inherit-product, vendor/lineage/build/target/product/product_launched_with_j_mr2.mk)
 
